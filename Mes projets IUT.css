@@ -1,0 +1,237 @@
+body {
+  background-color: #3b3b3b;
+  padding: 80px 38px;
+  font-family: 'Epilogue', sans-serif;
+  color: #fff;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  body {
+    padding-right: 20px;
+  }
+}
+
+header, nav, main, section, h2, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 542;
+  line-height: 294%;
+}
+
+.nav-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Aligning items to the right */
+  font-size: 35px;
+  font-weight: 542;
+  width: 100%;
+}
+
+.nav-title, .nav-item {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #000;
+  margin: 0 10px; /* Uniform margin for spacing */
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.separator {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0); /* Remove border */
+  background-color: #fff;
+  width: 849px; /* Taille cohérente avec les pages précédentes */
+  height: 8px;
+  margin-right: 30px; /* Espacement entre la barre et la navigation */
+  margin-left: -40px;
+}
+
+.main-section {
+  margin-top: 204px;
+  max-width: 1706px;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 91px;
+  line-height: 112%;
+  text-align: center; /* Centering the section title */
+}
+
+.section-subtitle {
+  margin-top: 242px;
+  font: 400 55px 'Inter', sans-serif;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #000;
+  border: 1px solid rgba(0, 0, 0, 0); /* Remove border */
+  text-align: center; /* Centering the subtitle */
+}
+
+.project-container {
+  margin-top: 35px;
+  width: 100%;
+  max-width: 1453px;
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 37%;
+}
+
+.column img {
+  aspect-ratio: 0.78;
+  object-fit: auto;
+  object-position: center;
+  width: 100%;
+}
+
+.column-text {
+  display: flex;
+  flex-direction: column;
+  width: 63%;
+  margin-left: 20px;
+}
+
+.text-content {
+  margin: auto 0;
+  font: 600 50px/100% 'Epilogue', sans-serif;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #000;
+  border: 1px solid rgba(0, 0, 0, 0); /* Remove border */
+}
+
+.section-subtitle--second {
+  margin-top: 203px;
+}
+
+.project-container--second {
+  margin-top: 159px;
+  display: flex;
+  gap: 20px;
+}
+
+.column--second {
+  width: 32%;
+}
+
+.column--second img {
+  aspect-ratio: 0.8;
+}
+
+.column-text--second {
+  width: 68%;
+}
+
+.text-content--second {
+  font: 400 55px 'Inter', sans-serif;
+}
+
+.section-subtitle--third {
+  margin-top: 230px;
+}
+
+.final-text {
+  margin-top: 75px;
+  font: 400 55px 'Inter', sans-serif;
+}
+
+/* Image styling */
+img {
+  width: auto; /* Utilise la largeur originale de l'image */
+  height: auto; /* Utilise la hauteur originale de l'image */
+  max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
+  max-height: 100%; /* Assure que l'image ne dépasse pas la hauteur de son conteneur */
+  margin-right: 20px; /* Ajoute un espacement entre l'image et le texte */
+  margin-bottom: -20px; /* Réduit la marge inférieure pour aligner l'image avec le texte */
+}
+
+
+
+@media (max-width: 991px) {
+  .main-section, .section-title, .section-subtitle, .project-container, .column, .column-text, .section-subtitle--second, .project-container--second, .column--second, .column-text--second, .section-subtitle--third, .final-text {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  
+  .section-title {
+    font-size: 40px;
+  }
+
+  .section-subtitle, .text-content, .text-content--second, .final-text {
+    font-size: 40px;
+  }
+
+  .project-container, .project-container--second {
+    flex-direction: column;
+  }
+
+  .column, .column--second {
+    width: 100%;
+  }
+
+  .column img, .column--second img {
+    max-width: 100%;
+  }
+
+  .column-text, .column-text--second {
+    width: 100%;
+  }
+
+  .text-content, .text-content--second {
+    margin-top: 40px;
+  }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Couleur de fond du footer */
+    color: #fff; /* Couleur du texte */
+    padding: 20px; /* Espace intérieur du footer */
+    text-align: center; /* Alignement du texte au centre */
+}
+
+
+.footer-content {
+  max-width: 1200px; /* Largeur maximale du contenu du footer */
+  margin: 0 auto; /* Centrer le contenu horizontalement */
+}
+
+  /* Définition de l'animation */
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  /* Application de l'animation */
+  .fade-out {
+    animation: fadeOut 0.5s ease-in-out;
+  }
+
+
+
+
+
+
+
+

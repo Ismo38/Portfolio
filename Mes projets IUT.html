@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes projets IUT Diaby Ousmane</title>
+    <link rel="stylesheet" href="Mes projets IUT.css">
+</head>
+<body>
+<header>
+    <div class="separator"></div>
+    <nav class="nav-section">
+        <a href="portfolio.html" class="nav-title">Accueil</a> 
+        <a href="aboutme_2.html" class="nav-item">A propos de moi</a>
+        <a href="Mes projets IUT.html" class="nav-item">Projets IUT</a>
+        <a href="Mon projet.html" class="nav-item">Mon projet</a>
+    </nav>
+</header>
+
+<main class="main-section">
+    <section>
+        <h2 class="section-title">Mes projets IUT</h2>
+
+        <p class="section-subtitle">SAE 1.03 : Installation d’un poste pour le développement</p>
+        <div class="project-container">
+            <div class="column">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/430743b9a210c48799d9d88da5de6f0e3123d07d1c5cda98ce5dee2bda6f6310?apiKey=b76c3a9f97ac4aab8234f67630fec76b&" alt="" />
+            </div>
+            <div class="column-text">
+                <p class="text-content">Cette SAE avait pour but de créer une carte mentale qui devait nous servir de notes lors d’une présentation à notre équipe sur la procédure d’installation d’une machine virtuelle, Debian12.</p>
+            </div>
+        </div>
+
+        <p class="section-subtitle section-subtitle--second">SAE S1.04 – Naufrage du Titanic</p>
+        <div class="project-container project-container--second">
+            <div class="column column--second">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/301dbdaa6839f8c8374bcbffbb197ccfe45338df1305ebc0fed802883c82e4cd?apiKey=b76c3a9f97ac4aab8234f67630fec76b&" alt="" />
+            </div>
+            <div class="column-text column-text--second">
+                <p class="text-content text-content--second">Dans cette SAE, nous devions modéliser, puis implémenter une base de données que nous devions peupler à partir des données mises à notre disposition.</p>
+            </div>
+        </div>
+
+        <div class="project-container project-container--third">
+            <div class="column column--third">
+                <img loading="lazy" src="Logo_ChiefsArena_transparent.png" alt="Logo chief's arena" />
+            </div>
+            <div class="column-text column-text--third">
+                <p class="section-subtitle section-subtitle--third">Méga SAÉ - Chief’s Arena</p>
+                <p class="final-text">Dans cette MEGA SAE, qui regroupe plusieurs matières, nous avions plusieurs objectifs : créer tout ou partie d'une application simple avec interface graphique, choisir une approche de résolution du problème, conduire un projet, et organiser un travail en équipe en réponse à un nouveau besoin. Dans notre cas, nous avons réalisé Chief’s Arena, une application qui permet à l’utilisateur de créer des concours culinaires.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="footer" style="display: none;">
+    <div class="footer-content">
+        <p>Contactez-moi : Ousmane.Diaby@etu.univ-grenoble-alpes.fr</p>
+        <p>Adresse : 127 Rue des Allies, Grenoble, France</p>
+    </div>
+</footer>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        var footer = document.getElementById("footer");
+        var scrollHeight = document.documentElement.scrollHeight;
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        var clientHeight = document.documentElement.clientHeight;
+        if (scrollHeight - scrollTop === clientHeight) {
+            footer.style.display = "block";
+        } else {
+            footer.style.display = "none";
+        }
+    }
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const aboutMeLink = document.querySelector('a[href="portfolio.html"]');
+      if (aboutMeLink) {
+        aboutMeLink.addEventListener('click', function(event) {
+          event.preventDefault(); // Empêche le comportement de lien par défaut
+          document.body.classList.add('fade-out');
+          setTimeout(function() {
+            window.location.href = aboutMeLink.href; // Navigue vers la page "About Me" après l'animation
+          }, 500); // Le temps de l'animation en millisecondes (0.5s dans cet exemple)
+        });
+      }
+    });
+  </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const aboutMeLink = document.querySelector('a[href="aboutme_2.html"]');
+      if (aboutMeLink) {
+        aboutMeLink.addEventListener('click', function(event) {
+          event.preventDefault(); // Empêche le comportement de lien par défaut
+          document.body.classList.add('fade-out');
+          setTimeout(function() {
+            window.location.href = aboutMeLink.href; // Navigue vers la page "About Me" après l'animation
+          }, 500); // Le temps de l'animation en millisecondes (0.5s dans cet exemple)
+        });
+      }
+    });
+  </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const aboutMeLink = document.querySelector('a[href="Mon projet.html"]');
+          if (aboutMeLink) {
+            aboutMeLink.addEventListener('click', function(event) {
+              event.preventDefault(); // Empêche le comportement de lien par défaut
+              document.body.classList.add('fade-out');
+              setTimeout(function() {
+                window.location.href = aboutMeLink.href; // Navigue vers la page "About Me" après l'animation
+              }, 500); // Le temps de l'animation en millisecondes (0.5s dans cet exemple)
+            });
+          }
+        });
+      </script>
+</body>
+</html>
+
+
+
+
+
+
+

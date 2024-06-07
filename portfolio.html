@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Diaby Ousmane</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <div class="container">
+      <header class="header">
+          <div class="divider"></div>
+          <nav class="nav-section">
+              <a href="portfolio.html" class="nav-title">Accueil</a>
+              <a href="aboutme_2.html" class="nav-item">A propos de moi</a>
+              <a href="Mes projets IUT.html" class="nav-item">Projets IUT</a>
+              <a href="Mon projet.html" class="nav-item">Mon projet</a>
+          </nav>
+      </header>
+      <main class="main-content">
+          <h1 class="title">
+              Portfolio <br />
+              Diaby Ousmane
+          </h1>
+          <div class="bottom-divider"></div>
+      </main>
+  </div>
+  <footer >
+    <div class="footer-content">
+        <p>Contactez-moi : Ousmane.Diaby@etu.univ-grenoble-alpes.fr</p>
+        <p>Adresse : 127 Rue des Allies, Grenoble, France</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const aboutMeLink = document.querySelector('a[href="aboutme_2.html"]');
+      if (aboutMeLink) {
+        aboutMeLink.addEventListener('click', function(event) {
+          event.preventDefault(); // Empêche le comportement de lien par défaut
+          document.body.classList.add('fade-out');
+          setTimeout(function() {
+            window.location.href = aboutMeLink.href; // Navigue vers la page "About Me" après l'animation
+          }, 500); // Le temps de l'animation en millisecondes (0.5s dans cet exemple)
+        });
+      }
+    });
+  </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const aboutMeLink = document.querySelector('a[href="Mes projets IUT.html"]');
+      if (aboutMeLink) {
+        aboutMeLink.addEventListener('click', function(event) {
+          event.preventDefault(); // Empêche le comportement de lien par défaut
+          document.body.classList.add('fade-out');
+          setTimeout(function() {
+            window.location.href = aboutMeLink.href; // Navigue vers la page "About Me" après l'animation
+          }, 500); // Le temps de l'animation en millisecondes (0.5s dans cet exemple)
+        });
+      }
+    });
+  </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const aboutMeLink = document.querySelector('a[href="Mon projet.html"]');
+    if (aboutMeLink) {
+      aboutMeLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Empêche le comportement de lien par défaut
+        document.body.classList.add('fade-out');
+        setTimeout(function() {
+          window.location.href = aboutMeLink.href; // Navigue vers la page "About Me" après l'animation
+        }, 500); // Le temps de l'animation en millisecondes (0.5s dans cet exemple)
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
+
+
+
+

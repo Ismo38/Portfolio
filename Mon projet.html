@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes projets IUT Diaby Ousmane</title>
+    <link rel="stylesheet" href="Mon projet.css">
+</head>
+<body>
+  <header>
+    <div class="separator"></div>
+    <nav class="nav-section">
+        <a href="portfolio.html" class="nav-title">Accueil</a> 
+        <a href="aboutme_2.html" class="nav-item">A propos de moi</a>
+        <a href="Mes projets IUT.html" class="nav-item">Projets IUT</a>
+        <a href="Mon projet.html" class="nav-item">Mon projet</a>
+    </nav>
+</header>
+    <h1 class="title">Mon projet personnel<br>ODLESS</h1>
+    <section class="content-container">
+        <article class="content">
+            <div class="image-container">
+                <img loading="lazy" src="" alt="Project image 1" class="image">
+            </div>
+            <div class="text-container">
+                <p class="description">Mon projet personnel et professionnel est de donner aux jeux physiques une dimension virtuelle pour aider à un apprentissage du jeu plus ludique et simple pour chaque tranche d’âge.</p>
+            </div>
+        </article>
+        <h2 class="header-2">Première Maquette- Loup Garou</h2>
+        <p class="text">Des camarades de classe que j’ai rencontrés lors de ma première année du BUT informatique ont adhéré à mon projet et ont voulu m’aider à réaliser ce projet.</p>
+    </section>
+    <section class="main-container">
+        <article class="content-2">
+            <div class="image-container-2">
+                <img loading="lazy" src="" alt="Project image 2" class="image-2">
+            </div>
+            <div class="text-container-2">
+                <p class="description-2">Le premier jeu physique que nous avons voulu numériser est le culte jeu du Loup Garou. En voici la première maquette</p>
+            </div>
+        </article>
+        <div class="footer">
+            <div class="content-3">
+                <div class="image-container-3">
+                    <img loading="lazy" src="" alt="Project event image" class="image-3">
+                </div>
+                <div class="text-container-3">
+                    <p class="description-3">Le 21 juin un événement est organisé dans la prairie du quartier Mistral, Grenoble, pour tous les jeunes comme moi du secteur qui auraient un projet. Je vais donc présenter mon projet ce jour devant le Maire de Grenoble ainsi que nombre d’associations du secteur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" style="display: none;">
+      <div class="footer-content">
+          <p>Contactez-moi : Ousmane.Diaby@etu.univ-grenoble-alpes.fr</p>
+          <p>Adresse : 127 Rue des Allies, Grenoble, France</p>
+      </div>
+  </footer>
+  
+  <script>
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+          var footer = document.getElementById("footer");
+          var scrollHeight = document.documentElement.scrollHeight;
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          var clientHeight = document.documentElement.clientHeight;
+          if (scrollHeight - scrollTop === clientHeight) {
+              footer.style.display = "block";
+          } else {
+              footer.style.display = "none";
+          }
+      }
+      </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const aboutMeLink = document.querySelector('a[href="portfolio.html"]');
+    if (aboutMeLink) {
+      aboutMeLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Empêche le comportement de lien par défaut
+        document.body.classList.add('fade-out');
+        setTimeout(function() {
+          window.location.href = aboutMeLink.href; // Navigue vers la page "About Me" après l'animation
+        }, 500); // Le temps de l'animation en millisecondes (0.5s dans cet exemple)
+      });
+    }
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const aboutMeLink = document.querySelector('a[href="aboutme_2.html"]');
+    if (aboutMeLink) {
+      aboutMeLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Empêche le comportement de lien par défaut
+        document.body.classList.add('fade-out');
+        setTimeout(function() {
+          window.location.href = aboutMeLink.href; // Navigue vers la page "About Me" après l'animation
+        }, 500); // Le temps de l'animation en millisecondes (0.5s dans cet exemple)
+      });
+    }
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const aboutMeLink = document.querySelector('a[href="Mes projets IUT.html"]');
+    if (aboutMeLink) {
+      aboutMeLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Empêche le comportement de lien par défaut
+        document.body.classList.add('fade-out');
+        setTimeout(function() {
+          window.location.href = aboutMeLink.href; // Navigue vers la page "About Me" après l'animation
+        }, 500); // Le temps de l'animation en millisecondes (0.5s dans cet exemple)
+      });
+    }
+  });
+</script>
+
+  
+</body>
+
+</html>

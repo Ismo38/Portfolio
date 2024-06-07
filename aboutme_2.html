@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me Diaby Ousmane</title>
+    <link rel="stylesheet" href="aboutme_2.css">
+</head>
+<body>
+    <section class="container">
+        <header class="header">
+            <div class="divider"></div>
+            <nav class="nav-section">
+                <a href="portfolio.html" class="nav-item">Accueil</a>
+                <a href="aboutme_2.html" class="nav-item">A propos de moi</a>
+                <a href="Mes projets IUT.html" class="nav-item">Projets IUT</a>
+                <a href="Mon projet.html" class="nav-item">Mon projet</a>
+            </nav>
+        </header>
+        <article class="main-content">
+            <section class="work-details">
+                <div class="image-column">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/08018d42292bbf7428c15e0c1a3682ed3c24abb503c1eb78ffa56a727bdbe0e1?apiKey=b76c3a9f97ac4aab8234f67630fec76b&" class="work-image" alt="Work related visual content" />
+                </div>
+                <div class="description-column">
+                    <section class="description">
+                        <h4 class="about-me-title">ABOUT ME</h4>
+                        <p class="about-me-description">
+                            Bonjour, Je m’appelle Diaby Ousmane j’ai 18 ans et je suis étudiant à l’IUT2 de Grenoble en BUT informatique. Je suis Auto-entrepreneur, j’ai une association du nom de ODLESS qui allie jeux physiques et jeux virtuels.
+                        </p>
+                    </section>
+                </div>
+            </section>
+        </article>
+        <div class="bottom-divider"></div>
+    </section>
+    <footer >
+        <div class="footer-content">
+            <p>Contactez-moi : Ousmane.Diaby@etu.univ-grenoble-alpes.fr</p>
+            <p>Adresse : 127 Rue des Allies, Grenoble, France</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const aboutMeLink = document.querySelector('a[href="Mes projets IUT.html"]');
+          if (aboutMeLink) {
+            aboutMeLink.addEventListener('click', function(event) {
+              event.preventDefault(); // Empêche le comportement de lien par défaut
+              document.body.classList.add('fade-out');
+              setTimeout(function() {
+                window.location.href = aboutMeLink.href; // Navigue vers la page "About Me" après l'animation
+              }, 500); // Le temps de l'animation en millisecondes (0.5s dans cet exemple)
+            });
+          }
+        });
+      </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const aboutMeLink = document.querySelector('a[href="portfolio.html"]');
+          if (aboutMeLink) {
+            aboutMeLink.addEventListener('click', function(event) {
+              event.preventDefault(); // Empêche le comportement de lien par défaut
+              document.body.classList.add('fade-out');
+              setTimeout(function() {
+                window.location.href = aboutMeLink.href; // Navigue vers la page "About Me" après l'animation
+              }, 500); // Le temps de l'animation en millisecondes (0.5s dans cet exemple)
+            });
+          }
+        });
+      </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const aboutMeLink = document.querySelector('a[href="Mon projet.html"]');
+    if (aboutMeLink) {
+      aboutMeLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Empêche le comportement de lien par défaut
+        document.body.classList.add('fade-out');
+        setTimeout(function() {
+          window.location.href = aboutMeLink.href; // Navigue vers la page "About Me" après l'animation
+        }, 500); // Le temps de l'animation en millisecondes (0.5s dans cet exemple)
+      });
+    }
+  });
+</script>
+  
+</body>
+</html>
+
+

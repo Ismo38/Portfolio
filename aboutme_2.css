@@ -1,0 +1,258 @@
+/* Assurez-vous que tout le conteneur s'adapte à la hauteur de l'écran */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Évitez le défilement */
+    background-color: #242020; /* Couleur de fond de la page */
+}
+
+/* CSS pour le conteneur principal */
+.container {
+    background-color: #3b3b3b;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    height: 100%;
+    justify-content: space-between; /* Distribue l'espace entre les enfants */
+    align-items: center; /* Centre les enfants horizontalement */
+    font-family: Epilogue, sans-serif; /* Assurez-vous que cette police est incluse dans votre projet */
+}
+
+/* CSS pour l'en-tête */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre les éléments horizontalement */
+    width: 100%;
+    gap: 20px;
+    font-size: 24px; /* Augmentation de la taille de la police */
+    font-weight: 542;
+    line-height: 1.5;
+    padding: 0 20px; /* Ajout de padding pour le centrage */
+    position: relative;
+}
+
+/* Barre de séparation du haut */
+.divider {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 1); /* Augmentation de la largeur de la bordure */
+    background-color: #fff;
+    height: 12px; /* Augmentation de la hauteur */
+    width: 40%; /* Ajustez la largeur selon la taille initiale souhaitée */
+    margin: 0 auto;
+    margin-left: 1px;
+    margin-top: 10px;
+}
+
+/* CSS pour la section de navigation */
+.nav-section {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+    margin-right: 20px; /* Décale la section de navigation vers la droite */
+    margin-top: 5px; /* Réduire la marge supérieure */
+}
+
+/* CSS pour les éléments de navigation */
+.nav-item {
+    font-family: Epilogue, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    padding: 30px 40px; /* Augmentation du padding pour améliorer l'apparence */
+    font-size: 45px; /* Augmentation de la taille de la police */
+}
+
+/* Responsive pour les éléments de navigation */
+@media (max-width: 991px) {
+    .nav-item {
+        font-size: 22px; /* Ajustez la taille de la police pour les écrans plus petits */
+    }
+}
+
+/* Barre de séparation du bas */
+.bottom-divider {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(255, 255, 255, 1); /* Augmentation de la largeur de la bordure */
+    background-color: #fff;
+    height: 16px; /* Augmentation de la hauteur */
+    width: 40%;
+    position: fixed; /* Position fixe */
+    bottom: 0;
+    margin-bottom: 5%; /* Alignement au bas de la page */
+    left: 80%; /* Centrage horizontal basé sur la largeur (ajustez selon vos besoins) */
+    transform: translateX(-50%);
+}
+
+/* CSS pour le contenu principal */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre le contenu horizontalement */
+    justify-content: center; /* Centre le contenu verticalement */
+    text-align: center; /* Centre le texte */
+    width: 100%;
+    font-size: 2vw; /* Utilisation d'unités relatives pour une meilleure adaptabilité */
+    line-height: 1.2;
+    padding: 0 20px;
+    flex-grow: 1; /* Prend tout l'espace disponible restant */
+    position: relative; /* Position relative pour permettre le positionnement de l'image */
+}
+
+/* Responsive pour le contenu principal */
+@media (max-width: 991px) {
+    .main-content {
+        font-size: 4vw; /* Taille relative pour les écrans plus petits */
+        padding: 0 10px;
+    }
+}
+
+/* Ajout de position relative à l'image pour permettre le positionnement absolu du titre */
+.main-content img {
+    position: relative;
+    z-index: 0; /* Assurez-vous que l'image soit derrière le texte */
+}
+
+/* CSS pour le titre */
+.about-me-title {
+    font-family: Epilogue, sans-serif;
+    margin: 0;
+    font-size: 5vw; /* Taille relative pour s'adapter à la taille de l'écran */
+    line-height: 1.2;
+    position: relative; /* Position relative pour permettre l'ajustement par rapport à son conteneur */
+    z-index: 1; /* Pour s'assurer que le titre soit au-dessus de l'image */
+    padding: 10px 20px; /* Ajout de padding pour améliorer l'apparence */
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000; /* Contour noir autour des lettres */
+}
+
+/* CSS pour le centrer verticalement */
+.description-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement les éléments */
+    height: 100%; /* Prend toute la hauteur disponible */
+    padding: 20px; /* Padding autour de la description */
+}
+
+/* Responsive pour le titre */
+@media (max-width: 991px) {
+    .about-me-title {
+        font-size: 8vw; /* Taille relative pour les écrans plus petits */
+    }
+}
+
+/* Description de la section "About Me" */
+.about-me-description {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #000;
+    margin-top: 20px;
+    font: 1.5vw/150% Epilogue, sans-serif; /* Utilisation d'unités relatives */
+}
+
+/* Responsive pour la description */
+@media (max-width: 991px) {
+    .about-me-description {
+        font-size: 3vw; /* Taille relative pour les écrans plus petits */
+        margin-top: 20px;
+    }
+}
+
+/* Colonne de l'image */
+.image-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 25%; /* Réduction de la largeur de l'image */
+}
+
+@media (max-width: 991px) {
+    .image-column {
+        width: 100%;
+    }
+}
+
+/* Image de travail */
+.work-image {
+    width: 100%;
+    height: auto; /* Ajuste la taille de l'image */
+}
+
+@media (max-width: 991px) {
+    .work-image {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* Colonne de la description */
+.description-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement */
+    line-height: normal;
+    width: 75%; /* Ajustement de la largeur de la description */
+    margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+    .description-column {
+        width: 100%;
+    }
+}
+
+/* Détails du travail */
+.work-details {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start; /* Aligner les éléments en haut */
+    width: 100%;
+    padding: 0 20px;
+}
+
+@media (max-width: 991px) {
+    .work-details {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Couleur de fond du footer */
+    color: #fff; /* Couleur du texte */
+    padding: -10px; /* Espace intérieur du footer */
+    text-align: center; /* Alignement du texte au centre */
+    font-size: 32px;
+  }
+  
+  
+  .footer-content {
+    max-width: 1500px; /* Largeur maximale du contenu du footer */
+    margin: 0 auto; /* Centrer le contenu horizontalement */
+  }
+
+  /* Définition de l'animation */
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  /* Application de l'animation */
+  .fade-out {
+    animation: fadeOut 0.5s ease-in-out;
+  }
+  
+
+
+
+
